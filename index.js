@@ -27,13 +27,13 @@ app.get("/hello", (req, res) => {
 })
 
 // Routes
-// app.use("/videos", videosRoutes);
+app.use("/videos", videosRoutes);
 app.use("/categories", categoriesRoutes);
-// app.use("/speakers", speakersRoutes);
-// app.use("/search", searchVideos);
-// app.use("/comment", Comments)
-// app.use("/chat", chatRoute);
-// app.use("/auth", authRoutes);
+app.use("/speakers", speakersRoutes);
+app.use("/search", searchVideos);
+app.use("/comment", Comments)
+app.use("/chat", chatRoute);
+app.use("/auth", authRoutes);
 // Start the server
 app.listen(3000, () => {
     console.log("Server running on the port: http://localhost:3000");
